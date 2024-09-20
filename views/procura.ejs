@@ -1,0 +1,33 @@
+<!-- <!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscar Livros</title>
+    <link rel="stylesheet" href="/css/style.css" type="text/css">
+</head>
+<body>
+
+    <h1>Buscar Livros no Banco de Dados</h1>
+
+    <form action="/search" method="GET">
+        <input type="text" name="query" placeholder="Digite o título do livro" class="search-bar" required>
+        <button type="submit" class="search-button">Buscar</button>
+    </form>
+
+
+    <div>
+        <% if (typeof livros !== 'undefined' && livros.length > 0) { %>
+            <h2>Resultados da Pesquisa:</h2>
+            <ul>
+                <% livros.forEach(function(livro) { %>
+                    <li><strong>Título:</strong> <%= livro.titulo %> | <strong>Autor:</strong> <%= livro.autor %></li>
+                <% }) %>
+            </ul>
+        <% } else if (typeof livros !== 'undefined') { %>
+            <p>Nenhum livro encontrado.</p>
+        <% } %>
+    </div>
+
+</body>
+</html> -->

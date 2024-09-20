@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/style.css" type="text/css">
+  <title>Livros Cadastrados</title>
+</head>
+<body>
+  <h2 class="titulo">Livros Cadastrados</h2>
+  <table class="livro-table">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Título</th>
+        <th>Autor</th>
+        <th>Gênero</th>
+        <th>Descrição</th>
+        <th>Data de Lançamento</th>
+        <th>Imagem</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% livros.forEach(livro => { %>
+        <tr>
+          <td><%= livro.id_livro %></td>
+          <td><%= livro.titulo %></td>
+          <td><%= livro.autor %></td>
+          <td><%= livro.genero %></td>
+          <td><%= livro.descricao %></td>
+          <td><%= livro.data_lanc %></td>
+          <td>
+            <% if (livro.imagem) { %>
+              <img class="livro-image" src="/uploads/<%= livro.imagem %>" alt="Imagem do Livro">
+            <% } else { %>
+              Sem imagem
+            <% } %>
+          </td>
+        </tr>
+      <% }) %>
+    </tbody>
+  </table>
+  <br/>
+  <a class="back-link" href="/dashboard">Voltar</a>
+</body>
+</html>
+
+<!--oi@hotmail.com-->
+<!--oi-->

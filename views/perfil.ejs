@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/style.css" type="text/css">
+  <title>Perfil do Usuário</title>
+</head>
+<body>
+  <h1 class="titulo">Bem-vindo, <%= userName %>!</h1>
+  <p class="paragrafo">Esta é sua página de perfil. Você pode visualizar os Livros Cadastrados. </p>
+  <br>
+  <h2 class="titulo"> Livros Disponíveis </h2>
+  <table border="1" cellpadding="10" class="livro-table">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Título</th>
+        <th>Autor</th>
+        <th>Gênero</th>
+        <th>Descrição</th>
+        <th>Data de Lançamento</th>
+        <th>Imagem</th>
+        <th>Ação</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% livros.forEach(livro => { %>
+        <tr>
+          <td><%= livro.id_livro %></td>
+          <td><%= livro.titulo %></td>
+          <td><%= livro.autor %></td>
+          <td><%= livro.genero %></td>
+          <td><%= livro.descricao %></td>
+          <td><%= livro.data_lanc %></td>
+          <td>
+            <% if (livro.imagem) { %>
+              <img class="livro-image" src="/uploads/<%= livro.imagem %>" width="200" height="300" alt="Imagem do Livro">
+            <% } else { %>
+              Sem imagem
+            <% } %>
+          </td>
+          <td>
+            <!-- Verificar se o usuário já obteve o livro -->
+            <% if (leituraMap[livro.id_livro]) { %>
+              <!-- Se o usuário já obteve o livro, exibir "Editar Status" -->
+              <button><a class="azin" href="/editar-status/<%= livro.id_livro %>">Editar Status (Status atual: <%= leituraMap[livro.id_livro] %>)</a></button>
+            <% } else { %>
+              <!-- Caso contrário, exibir "Obter Livro" -->
+              <button ><a class="azin" href="/obter-livro/<%= livro.id_livro %>">Obter Livro</a></button>
+            <% } %>
+          </td>
+        </tr>
+      <% }) %>
+    </tbody>
+  </table>
+  <br/> <br/>
+  <div class="juntinho">
+    <p>
+      <a href="/editar-perfil"> Editar Perfil </a>
+    </p>
+    <p>
+      <a href="/logout">Logout</a>
+    </p>
+  <br/> <br/>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/style.css" type="text/css">
+  <title>Obter Livro</title>
+</head>
+<body>
+  <h2>Obter Livro: <%= livro.titulo %></h2>
+  <br>
+  <form action="/obter-livro/<%= livro.id_livro %>" method="POST" class="formCadLivro">
+    
+    <% if (livro.imagem) { %>
+      <img class="img" src="/uploads/<%= livro.imagem %>" width="200" height="300" alt="Imagem do Livro">
+    <% } else { %>
+      Sem imagem
+    <% } %>
+
+    <br/><br/>
+    <label>Status da Leitura:</label>
+    <select name="status_leitura" required class="digitarFormi">
+      <option value="Não iniciado">Não iniciado</option>
+      <option value="Em andamento">Em andamento</option>
+      <option value="Concluído">Concluído</option>
+    </select><br/><br/>
+
+    <button class="botaoForm" type="submit" id="salvar" name="salvar">Salvar</button>
+    <br><br>
+    <button class="botaoForm"><a class="azin" href="/perfil">Voltar</a></button>
+  </form>
+</body>
+<script src="/js/scriptObterLivro.js"></script>
+</html>

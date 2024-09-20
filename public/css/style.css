@@ -1,0 +1,309 @@
+* { 
+    margin: 0;
+    padding: 0;
+    border: none;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/*Login*/
+
+.form {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    align-content: center;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.digitarForm /*input[type="email"], input[type="password"]*/ {
+    width: 280px;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.botaoForm /*input[type="submit"]*/ {
+    background-color: #4CAF50;
+    width: 100%;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.paragrafo {
+    text-align: center;
+}
+
+.paragrafo a {
+    margin: 0 10px;
+    text-decoration: none; 
+    color: #007BFF;
+}
+
+/*Login*/
+
+/*dashboard*/
+
+table {
+    width: 960px;
+    border-collapse: collapse;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+ th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+ th {
+    background-color: #1168cc91;
+    color: white;
+}
+
+button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.editar {
+    background-color: #28a745;
+    color: white;
+}
+
+.juntinho {
+    display: flex;
+    padding: 10px;
+    justify-content: space-between; 
+}
+
+.juntinho a {
+    margin: 0 10px;
+    text-decoration: none; 
+    color: #007BFF;
+}
+
+/*dashboard*/
+
+/*EditUser*/
+
+.paragraafo a {
+    color: #007BFF;
+    text-decoration: none;
+    padding-top: 5px;
+}
+
+/*EditUser*/
+
+/*livros*/
+
+/*Cadastro de Livors*/
+
+.formCadLivro {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 500px;
+    align-content: center;
+}
+
+.formEditLivro {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 500px;
+    display: flex;
+    flex-direction: column; /* Coloca os elementos em coluna */
+    align-items: center; /* Centraliza o conteúdo horizontalmente */
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.digitarFormi /*input[type="email"], input[type="password"]*/ {
+    width: 480px;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.file {
+    width: 480px;
+    padding: 10px;
+    margin-bottom: 15px;
+    /* border: 1px solid #ccc; */
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.botaoForm /*input[type="submit"]*/ {
+    background-color: #4CAF50;
+    width: 100%;
+    color: white;
+    padding: 10px;
+    padding-bottom: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.botaoForm2 {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid black;
+    padding-bottom: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.h2zin {
+    font-size: 20pt;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+}
+
+.paragrafo {
+    text-align: center;
+}
+
+.paragrafo a {
+    color: #007BFF;
+    text-decoration: none;
+    padding: 5px;
+}
+
+/*Cadastro de livros*/
+
+.titulo {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.livro-table {
+  width: 960px;
+  border-collapse: collapse;
+  background-color: white;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.livro-table th, .livro-table td {
+  padding: 10px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+.livro-table th {
+    background-color: #1168cc91;
+  color: white;
+}
+
+.livro-image {
+  max-width: 60px;
+  height: auto;
+}
+
+/*Cadastro Livro*/
+
+.img {
+    width: 280px;
+    padding: 10px;
+    margin: 0 auto 15px auto;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    display: block; 
+}
+
+.imgF {
+    width: 100px; /* Define uma largura apropriada para a imagem */
+    padding: 10px;
+    margin: 0 auto 15px auto; /* Centraliza a imagem */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    display: block; 
+}
+
+
+.azin {
+    color: white;
+}
+
+/*livros*/
+
+/*Obter Livro*/
+
+obterLivro {
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    align-content: center;
+}
+
+/*Obter Livro*/
+
+/*Barra de Pesquisa*/
+
+.search-bar {
+    padding: 10px;
+    font-size: 16px;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.search-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.search-button:hover {
+    background-color: #218838;
+}
+
+/*Barra de Pesquisa*/
